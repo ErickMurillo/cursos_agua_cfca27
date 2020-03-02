@@ -1,7 +1,6 @@
 
 
 {% load  static %}
-{% load thumbnail %}
 
 <!DOCTYPE html>
 <html dir="ltr" lang="es">
@@ -150,7 +149,7 @@
       {% block contenido %}{% endblock contenido %}
     </main><!-- /.container -->
 
-    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" {% thumbnail site_config.foto_fondo_footer '1800x1000' as im %} data-bg-img="{{im.url}}" {% endthumbnail %} style="background-size: 100%;">
+    <footer id="footer" class="footer divider layer-overlay overlay-dark-9"  style="background-size: 100%;">
 
         <div class="container main-footer pt-40 pb-10">
             <div class="row border-bottom-black">

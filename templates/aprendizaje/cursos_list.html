@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load thumbnail %}
+
 
 
 {% block extra_css %}
@@ -44,10 +44,7 @@
     							<div class="post-thumb thumb">
     								<figure class="post-thumb thumb imghvr-hinge-left bg-theme-colored">
                                 {% if curso.imagen %}
-                                        {% thumbnail curso.imagen "830x620" crop="center" as im %}
-                                            <img src="{{ im.url }}" alt="{{imagen.titulo}}" alt="{{imagen.titulo}}" class="img-fullwidth">
-                                    
-                                        {% endthumbnail %}
+                                            <img src="/media/{{ curso.imagen }}" height="620" width="830" alt="" alt="" class="img-fullwidth">
                                 {% else %}
                                             <img src="http://placehold.it/830x620" alt="" class="img-responsive img-fullwidth">
                                 {% endif %}

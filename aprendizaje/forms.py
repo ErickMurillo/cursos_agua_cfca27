@@ -1,12 +1,12 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from ckeditor_uploader.widgets import CKEditorUploadingWidget
+# from ckeditor_uploader.widgets import CKEditorUploadingWidget
 
 from .models import Cursos, Contenidos
 
 class CursosAdminForm(forms.ModelForm):
-    descripcion = forms.CharField(widget=CKEditorUploadingWidget())
+    # descripcion = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Cursos
@@ -14,7 +14,7 @@ class CursosAdminForm(forms.ModelForm):
 
 
 class ContenidosAdminForm(forms.ModelForm):
-    contenido = forms.CharField(widget=CKEditorUploadingWidget())
+    # contenido = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Contenidos
